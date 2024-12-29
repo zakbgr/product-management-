@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: transparent; /* Set background color to transparent */
+    border: 1px solid #4CAF50; /* Green border */
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* 3D Button Effect */
+input[type="submit"] {
+    box-shadow: 0 9px #999;
+    transform: translateY(1px);
+}
+
+input[type="submit"]:active {
+    background-color: #3e8e41; /* Clicked color */
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+}
